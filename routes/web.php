@@ -25,5 +25,5 @@ Auth::routes();
 Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard');
 
 Route::get('/contact', [ContactController::class, 'index'])->name('contact.index');
-Route::resource('/services', ServiceController::class);
+Route::get('/services', [ServiceController::class, 'index'])->name('services.index');
 Route::post('/contact-send', [ContactController::class, 'sendEmail'])->name('contact.send');
