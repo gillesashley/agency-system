@@ -2,8 +2,10 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\JobController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\VacancyController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,3 +29,5 @@ Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])-
 Route::get('/contact', [ContactController::class, 'index'])->name('contact.index');
 Route::get('/services', [ServiceController::class, 'index'])->name('services.index');
 Route::post('/contact-send', [ContactController::class, 'sendEmail'])->name('contact.send');
+Route::resource('/jobs', JobController::class);
+Route::get('/vacancies', [VacancyController::class, 'index'])->name('vacancies.index');
