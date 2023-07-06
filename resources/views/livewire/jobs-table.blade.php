@@ -21,15 +21,20 @@
                         <td class="px-6 py-4">{{ $job->description }}</td>
                         <td class="px-6 py-4">{{ $job->location }}</td>
                         <td class="px-6 py-4">
-                            <a href="#"
-                                class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a> |
-                            <a href="#"
-                                class="font-medium text-red-600 dark:text-red-500 hover:underline">DELETE</a>
+                            <button type="button" data-modal-target="edit-job-modal-{{ $job->id }}"
+                                data-modal-toggle="edit-job-modal-{{ $job->id }}"
+                                class="font-medium text-blue-600 dark:text-blue-500">Edit</button> |
+
+                                <form action="{{ route('jobs.destroy', [$job->id]) }}" method="POST" style="display: inline">
+                                    @csrf
+                                    @method("DELETE")
+                                    <button type="submit" class="font-medium text-red-600 dark:text-red-500">DELETE</button>
+                                </form>
                         </td>
                     </tr>
+                    @include('backend.jobs.edit', ['job' => $job])
                 @endforeach
             </tbody>
         </table>
     </div>
-
 </div>

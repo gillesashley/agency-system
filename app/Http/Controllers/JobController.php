@@ -43,7 +43,7 @@ class JobController extends Controller
         return redirect()->back()->with('success', 'Job updated successfully');
     }
 
-    public function delete($id)
+    public function destroy($id)
     {
         $job = Job::findOrFail($id);
         $job->delete();
