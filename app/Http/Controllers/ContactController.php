@@ -8,15 +8,11 @@ use \App\Mail\ContactFormMail;
 
 class ContactController extends Controller
 {
-    public function index()
-    {
-        return view('frontend.contact');
-    }
-
     public function sendEmail(Request $request)
     {
         $validatedData = $request->validate([
             'name' => 'required',
+            'subject' => 'required',
             'email' => 'required|email',
             'message' => 'required',
         ]);
