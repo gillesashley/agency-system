@@ -8,6 +8,7 @@
                     <th scope="col" class="px-6 py-3">Job Title</th>
                     <th scope="col" class="px-6 py-3">Description</th>
                     <th scope="col" class="px-6 py-3">Location</th>
+                    <th scope="col" class="px-6 py-3">Image</th>
                     <th scope="col" class="px-6 py-3">Action</th>
                 </tr>
             </thead>
@@ -20,15 +21,18 @@
                             {{ $job->title }}</th>
                         <td class="px-6 py-4">{{ $job->description }}</td>
                         <td class="px-6 py-4">{{ $job->location }}</td>
+                        <td class="px-6 py-4">{{ $job->image }}</td>
                         <td class="px-6 py-4">
                             <button type="button" data-modal-target="edit-job-modal-{{ $job->id }}"
                                 data-modal-toggle="edit-job-modal-{{ $job->id }}"
                                 class="font-medium text-blue-600 dark:text-blue-500">Edit</button> |
 
-                            <form action="{{ route('jobs.destroy', [$job->id]) }}" class="delete-job" method="POST" style="display: inline">
+                            <form action="{{ route('jobs.destroy', [$job->id]) }}" class="delete-job" method="POST"
+                                style="display: inline">
                                 @csrf
-                                @method("DELETE")
-                                <button type="submit" onclick="return false;" class="font-medium text-red-600 dark:text-red-500">DELETE</button>
+                                @method('DELETE')
+                                <button type="submit" onclick="return false;"
+                                    class="font-medium text-red-600 dark:text-red-500">DELETE</button>
                             </form>
                         </td>
                     </tr>
@@ -40,21 +44,21 @@
 </div>
 
 @push('scripts')
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var deleteButtons = document.querySelectorAll('.delete-job');
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var deleteButtons = document.querySelectorAll('.delete-job');
 
-        deleteButtons.forEach(function(button) {
-            button.addEventListener('click', function(event) {
-                event.preventDefault();
+            deleteButtons.forEach(function(button) {
+                button.addEventListener('click', function(event) {
+                    event.preventDefault();
 
-                var confirmation = confirm('Are you sure you want to delete this job?');
-                if (confirmation) {
-                    var form = button.closest('form');
-                    form.submit();
-                }
+                    var confirmation = confirm('Are you sure you want to delete this job?');
+                    if (confirmation) {
+                        var form = button.closest('form');
+                        form.submit();
+                    }
+                });
             });
         });
-    });
-</script>
+    </script>
 @endpush

@@ -18,6 +18,9 @@
     <section>
         <div class="container">
             <div class="row">
+                @if (count($jobs) < 1)
+                    <h1>No Jobs Yet, Check again Later!</h1>
+                @endif
                 @foreach ($jobs as $index => $job)
                     <div class="col-lg-3 col-md-6 mb-4">
                         <div class="card h-100">
@@ -31,8 +34,9 @@
                         </div>
                     </div>
                     @if (($index + 1) % 4 == 0)
-                        </div><div class="row">
-                    @endif
+            </div>
+            <div class="row">
+                @endif
                 @endforeach
             </div>
         </div>

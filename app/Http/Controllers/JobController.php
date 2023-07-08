@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Job;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class JobController extends Controller
 {
@@ -41,15 +42,27 @@ class JobController extends Controller
             'jobTitle' => 'required|string|max:255',
             'jobDescription' => 'required|string',
             'jobLocation' => 'required|string|max:255',
+            'image' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
 
         $job = Job::findOrFail($id);
 
-        $job->update([
-            'title' => $validatedData['jobTitle'],
-            'description' => $validatedData['jobDescription'],
-            'location' => $validatedData['jobLocation'],
-        ]);
+        // Handle image upload if a new image is provided
+        if ($request->hasFile('image')) {
+            // Delete the previous image if it exists
+            if ($job->image) {
+                Storage::delete($job->image);
+            }
+
+            // Generate a unique and meaningful image name
+            $imageName = 'images/' . uniqid() . '.' . $request->file('image')->getClientOriginalName();
+
+            // Store the new image
+            $imagePath = $request->file('image')->storeAs('', $imageName);
+            $validatedData['image'] = $imagePath;
+        }
+
+        $job->update($validatedData);
 
         return redirect()->back()->with('success', 'Job updated successfully');
     }
