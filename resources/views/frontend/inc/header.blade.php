@@ -30,7 +30,7 @@
                         </a>
                         <ul>
                             <li><a href="{{ route('pages.apply') }}">Apply Here</a></li>
-                            <li><a href="#">Vacancies</a></li>
+                            <li><a href="{{ route('pages.vacancies') }}">Vacancies</a></li>
                             <li><a href="#">Dropdown 3</a></li>
                             <li><a href="#">Dropdown 4</a></li>
                         </ul>

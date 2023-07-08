@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Job;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
@@ -29,5 +30,11 @@ class PagesController extends Controller
     public function apply()
     {
         return view('frontend.apply');
+    }
+
+    public function vacancies()
+    {
+        $jobs = Job::all();
+        return view('frontend.vacancies', compact('jobs'));
     }
 }
