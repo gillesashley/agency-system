@@ -27,6 +27,7 @@ Route::get('/', [PagesController::class, 'index'])->name('pages.index');
 Route::get('/about', [PagesController::class, 'about'])->name('pages.about');
 Route::get('/services', [PagesController::class, 'services'])->name('pages.services');
 Route::get('/contact', [PagesController::class, 'contact'])->name('pages.contact');
+Route::get('/apply', [PagesController::class, 'apply'])->name('pages.apply');
 
 Route::post('/contact-send', [ContactController::class, 'sendEmail'])->name('contact.send');
 Route::resource('/jobs', JobController::class);

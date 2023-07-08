@@ -1,5 +1,7 @@
 @extends('layouts.frontend')
 
+@section('title', 'About')
+
 @section('body-class', 'page-about')
 
 @section('content')

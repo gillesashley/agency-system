@@ -32,22 +32,24 @@
                     <div class="col-lg-2 col-6 footer-links">
                         <h4>Our Services</h4>
                         <ul>
-                            <li><i class="bi bi-dash"></i> <a href="#">Web Design</a></li>
-                            <li><i class="bi bi-dash"></i> <a href="#">Web Development</a></li>
-                            <li><i class="bi bi-dash"></i> <a href="#">Product Management</a></li>
-                            <li><i class="bi bi-dash"></i> <a href="#">Marketing</a></li>
-                            <li><i class="bi bi-dash"></i> <a href="#">Graphic Design</a></li>
+                            <li><i class="bi bi-dash"></i> <a href="#">Hospitality Section</a></li>
+                            <li><i class="bi bi-dash"></i> <a href="#">Kitchen Assistants</a></li>
+                            <li><i class="bi bi-dash"></i> <a href="#">Porters Cleaners</a></li>
+                            <li><i class="bi bi-dash"></i> <a href="#">Chef Waitresses</a></li>
+                            <li><i class="bi bi-dash"></i> <a href="#">Warehouse Staff</a></li>
+                            <li><i class="bi bi-dash"></i> <a href="#">Offstead</a></li>
                         </ul>
                     </div>
 
                     <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
                         <h4>Contact Us</h4>
                         <p>
-                            A108 Adam Street <br>
-                            New York, NY 535022<br>
-                            United States <br><br>
-                            <strong>Phone:</strong> +1 5589 55488 55<br>
-                            <strong>Email:</strong> info@example.com<br>
+                            Shine Office, 46 Harehills Road, <br>
+                            Leeds LS8 5HS<br>
+                            United Kingdom <br><br>
+                            <strong>Phone:</strong> 0113 518 9990 | 07840 262520<br>
+                            <strong>Email 1:</strong> officeadmin@jayjaysocialcare.com<br>
+                            <strong>Email 2:</strong> marketing@jayjaysocialcare.com<br>
                         </p>
                     </div>
                 </div>

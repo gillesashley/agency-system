@@ -1,5 +1,7 @@
 @extends('layouts.frontend')
 
+@section('title', 'Contact')
+
 @section('body-class', 'page-contact')
 
 @section('content')
@@ -30,7 +32,7 @@
                             <i class="bi bi-geo-alt flex-shrink-0"></i>
                             <div>
                                 <h4>Location:</h4>
-                                <p>A108 Adam Street, New York, NY 535022</p>
+                                <p>Shine Office, 46 Harehills Road, Leeds LS8 5HS</p>
                             </div>
                         </div><!-- End Info Item -->
 
@@ -38,7 +40,8 @@
                             <i class="bi bi-envelope flex-shrink-0"></i>
                             <div>
                                 <h4>Email:</h4>
-                                <p>info@example.com</p>
+                                <p>officeadmin@jayjaysocialcare.com</p>
+                                <p>marketing@jayjaysocialcare.com</p>
                             </div>
                         </div><!-- End Info Item -->
 
@@ -46,7 +49,8 @@
                             <i class="bi bi-phone flex-shrink-0"></i>
                             <div>
                                 <h4>Call:</h4>
-                                <p>+1 5589 55488 55</p>
+                                <p>0113 518 9990</p>
+                                <p>07840 262520</p>
                             </div>
                         </div><!-- End Info Item -->
 
@@ -54,7 +58,8 @@
 
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
 
-                        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <form action="{{ route('contact.send') }}" method="post" role="form" class="php-email-form">
+                            @csrf
                             <div class="row">
                                 <div class="col-md-6 form-group">
                                     <input type="text" name="name" class="form-control" id="name"
