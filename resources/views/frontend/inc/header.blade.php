@@ -16,18 +16,21 @@
                     <li><a href="{{ route('pages.index') }}" class="{{ request()->is('/') ? 'active' : '' }}">Home</a></li>
                     <li><a href="{{ route('pages.about') }}" class="{{ request()->is('about*') ? 'active' : '' }}">About</a>
                     </li>
-                    <li><a href="{{ route('pages.services') }}"
-                            class="{{ request()->is('services*') ? 'active' : '' }}">Services</a></li>
+                    <li>
+                        <a href="{{ route('pages.services') }}" class="{{ request()->is('services*') ? 'active' : '' }}">
+                            Services
+                        </a>
+                    </li>
                     {{-- <li><a href="portfolio.html">Portfolio</a></li> --}}
                     <li><a href="team.html">Team</a></li>
                     {{-- <li><a href="blog.html">Blog</a></li> --}}
                     <li class="dropdown">
-                        <a href="#"><span>Dropdown</span>
+                        <a href="#"><span>More</span>
                             <i class="bi bi-chevron-down dropdown-indicator"></i>
                         </a>
                         <ul>
                             <li><a href="{{ route('pages.apply') }}">Apply Here</a></li>
-                            <li><a href="#">Dropdown 2</a></li>
+                            <li><a href="#">Vacancies</a></li>
                             <li><a href="#">Dropdown 3</a></li>
                             <li><a href="#">Dropdown 4</a></li>
                         </ul>

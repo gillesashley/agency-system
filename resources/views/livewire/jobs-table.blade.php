@@ -25,11 +25,11 @@
                                 data-modal-toggle="edit-job-modal-{{ $job->id }}"
                                 class="font-medium text-blue-600 dark:text-blue-500">Edit</button> |
 
-                                <form action="{{ route('jobs.destroy', [$job->id]) }}" method="POST" style="display: inline">
-                                    @csrf
-                                    @method("DELETE")
-                                    <button type="submit" class="font-medium text-red-600 dark:text-red-500">DELETE</button>
-                                </form>
+                            <form action="{{ route('jobs.destroy', [$job->id]) }}" class="delete-job" method="POST" style="display: inline">
+                                @csrf
+                                @method("DELETE")
+                                <button type="submit" onclick="return false;" class="font-medium text-red-600 dark:text-red-500">DELETE</button>
+                            </form>
                         </td>
                     </tr>
                     @include('backend.jobs.edit', ['job' => $job])
@@ -38,3 +38,23 @@
         </table>
     </div>
 </div>
+
+@push('scripts')
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var deleteButtons = document.querySelectorAll('.delete-job');
+
+        deleteButtons.forEach(function(button) {
+            button.addEventListener('click', function(event) {
+                event.preventDefault();
+
+                var confirmation = confirm('Are you sure you want to delete this job?');
+                if (confirmation) {
+                    var form = button.closest('form');
+                    form.submit();
+                }
+            });
+        });
+    });
+</script>
+@endpush
