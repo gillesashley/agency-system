@@ -18,7 +18,7 @@ class ContactController extends Controller
         ]);
 
         // Send email
-        Mail::to('xylaray37@gmail.com')->send(new ContactFormMail($request->user(), $request->all()));
+        Mail::to('Salatugab@gmail.com')->send(new ContactFormMail($request->user(), $request->all()));
 
         return redirect()->back()->with('success', 'Your message has been sent successfully!');
     }

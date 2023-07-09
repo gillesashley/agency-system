@@ -22,7 +22,7 @@
                         </a>
                     </li>
                     {{-- <li><a href="portfolio.html">Portfolio</a></li> --}}
-                    <li><a href="team.html">Team</a></li>
+                    {{-- <li><a href="team.html">Team</a></li> --}}
                     {{-- <li><a href="blog.html">Blog</a></li> --}}
                     <li class="dropdown">
                         <a href="#"><span>More</span>
@@ -31,8 +31,8 @@
                         <ul>
                             <li><a href="{{ route('pages.apply') }}">Apply Here</a></li>
                             <li><a href="{{ route('pages.vacancies') }}">Vacancies</a></li>
-                            <li><a href="#">Dropdown 3</a></li>
-                            <li><a href="#">Dropdown 4</a></li>
+                            {{-- <li><a href="#">Dropdown 3</a></li> --}}
+                            {{-- <li><a href="#">Dropdown 4</a></li> --}}
                         </ul>
                     </li>
                     <li><a href="{{ route('pages.contact') }}" class="{{ request()->is('contact*') ? 'active' : '' }}">Contact</a></li>

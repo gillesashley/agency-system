@@ -71,48 +71,53 @@
 
                                 <div class="swiper-slide">
                                     <div class="item">
-                                        <h3 class="mb-3">Let's grow your business together</h3>
-                                        <h4 class="mb-3">Optio reiciendis accusantium iusto architecto at quia minima
-                                            maiores quidem, dolorum.</h4>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ipsam
-                                            perferendis asperiores explicabo vel tempore velit totam, natus nesciunt
-                                            accusantium dicta quod quibusdam ipsum maiores nobis non, eum. Ullam reiciendis
-                                            dignissimos laborum aut, magni voluptatem velit doloribus quas sapiente optio.
-                                        </p>
+                                        <h3 class="mb-3">Join Our Health Care Agency</h3>
+                                        <h4 class="mb-3">Make a Difference in Healthcare</h4>
+                                        <p>Are you looking for an opportunity to grow your healthcare career? Join our
+                                            Health Care Agency and be part of a team that is dedicated to providing
+                                            excellent care to patients. We offer a supportive and collaborative environment
+                                            where you can thrive and make a real impact in the lives of others.</p>
                                     </div>
                                 </div><!-- End slide item -->
 
                                 <div class="swiper-slide">
                                     <div class="item">
-                                        <h3 class="mb-3">Unde perspiciatis ut repellat dolorem</h3>
-                                        <h4 class="mb-3">Amet cumque nam sed voluptas doloribus iusto. Dolorem eos aliquam
-                                            quis.</h4>
-                                        <p>Dolorem quia fuga consectetur voluptatem. Earum consequatur nulla maxime
-                                            necessitatibus cum accusamus. Voluptatem dolorem ut numquam dolorum delectus
-                                            autem veritatis facilis. Et ea ut repellat ea. Facere est dolores fugiat dolor.
-                                        </p>
+                                        <h3 class="mb-3">Unlock Your Potential with Us</h3>
+                                        <h4 class="mb-3">Experience Fulfillment in Your Career</h4>
+                                        <p>Discover the opportunities and benefits of joining our Health Care Agency.
+                                            We prioritize your growth and well-being. With us, you can find a supportive
+                                            and engaging environment that allows you to unleash your potential.
+                                            Enjoy the satisfaction of making a difference in the lives of others while
+                                            experiencing professional growth and fulfillment. We are committed to
+                                            providing you with a rewarding career journey.</p>
                                     </div>
                                 </div><!-- End slide item -->
 
                                 <div class="swiper-slide">
                                     <div class="item">
-                                        <h3 class="mb-3">Aliquid non alias minus</h3>
-                                        <h4 class="mb-3">Necessitatibus voluptatibus explicabo dolores a vitae voluptatum.
-                                        </h4>
-                                        <p>Neque voluptates aut. Soluta aut perspiciatis porro deserunt. Voluptate ut itaque
-                                            velit. Aut consectetur voluptatem aspernatur sequi sit laborum. Voluptas enim
-                                            dolorum fugiat aut.</p>
+                                        <h3 class="mb-3">Discover New Opportunities</h3>
+                                        <h4 class="mb-3">Experience Fulfillment in Your Career Path</h4>
+                                        <p>Explore a world of possibilities with our Health Care Agency.
+                                            We offer diverse and fulfilling opportunities that allow you to grow
+                                            and excel in your career. Experience the satisfaction of providing
+                                            quality care while being supported by a team of dedicated professionals.
+                                            We value your contributions and are committed to fostering a rewarding
+                                            and purposeful work environment. Join us and embark on a fulfilling
+                                            career journey in healthcare.</p>
                                     </div>
                                 </div><!-- End slide item -->
 
                                 <div class="swiper-slide">
                                     <div class="item">
-                                        <h3 class="mb-3">Necessitatibus suscipit non voluptatem quibusdam</h3>
-                                        <h4 class="mb-3">Tempora quos est ut quia adipisci ut voluptas. Deleniti laborum
-                                            soluta nihil est. Eum similique neque autem ut.</h4>
-                                        <p>Ut rerum et autem vel. Et rerum molestiae aut sit vel incidunt sit at voluptatem.
-                                            Saepe dolorem et sed voluptate impedit. Ad et qui sint at qui animi animi rerum.
-                                        </p>
+                                        <h3 class="mb-3">Unlock Your Potential in Healthcare</h3>
+                                        <h4 class="mb-3">Experience Meaningful Growth and Fulfillment</h4>
+                                        <p>Discover a world of possibilities with our Health Care Agency.
+                                            We provide a platform for you to unleash your potential and achieve
+                                            personal and professional growth. Our agency values your well-being
+                                            and offers a supportive environment where you can make a meaningful
+                                            impact in the lives of others. Embrace the rewarding journey of serving
+                                            others and find fulfillment in your work. Join us and become a part of
+                                            our dedicated team in delivering exceptional healthcare services.</p>
                                     </div>
                                 </div><!-- End slide item -->
 

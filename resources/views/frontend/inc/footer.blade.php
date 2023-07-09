@@ -8,8 +8,10 @@
                         <a href="{{ route('pages.index') }}" class="logo d-flex align-items-center">
                             <span>JayJay Health Care</span>
                         </a>
-                        <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita
-                            valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+                        <p>JayJay Health Care is a trusted provider of exceptional healthcare services. We prioritize the
+                            well-being of individuals and communities, offering personalized care plans and state-of-the-art
+                            facilities. With a holistic approach, we deliver comprehensive and compassionate healthcare you
+                            can rely on. Choose JayJay Health Care for trusted and personalized healthcare.</p>
                         <div class="social-links d-flex  mt-3">
                             <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
                             <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>

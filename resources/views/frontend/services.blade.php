@@ -33,9 +33,10 @@
                     <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
                         <div class="icon flex-shrink-0"><i class="bi bi-briefcase" style="color: #f57813;"></i></div>
                         <div>
-                            <h4 class="title"><a href="#" class="stretched-link">Lorem Ipsum</a></h4>
-                            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias
-                                excepturi sint occaecati cupiditate non provident</p>
+                            <h4 class="title"><a href="#" class="stretched-link">Hospitality</a></h4>
+                            <p class="description">We specialize in recruiting health workers for hospitality companies. Our
+                                agency connects qualified professionals who provide excellent healthcare services to guests
+                                and employees in the hospitality industry.</p>
                         </div>
                     </div>
                     <!-- End Service Item -->
@@ -43,45 +44,52 @@
                     <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
                         <div class="icon flex-shrink-0"><i class="bi bi-card-checklist" style="color: #15a04a;"></i></div>
                         <div>
-                            <h4 class="title"><a href="#" class="stretched-link">Dolor Sitema</a></h4>
-                            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                                ex ea commodo consequat tarad limino ata</p>
+                            <h4 class="title"><a href="#" class="stretched-link">Kitchen Assistants</a></h4>
+                            <p class="description">We specialize in recruiting kitchen assistants for various
+                                establishments. Our agency connects skilled individuals who support the smooth functioning
+                                of kitchens in restaurants, hotels, and food service businesses.</p>
                         </div>
                     </div><!-- End Service Item -->
 
                     <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
                         <div class="icon flex-shrink-0"><i class="bi bi-bar-chart" style="color: #d90769;"></i></div>
                         <div>
-                            <h4 class="title"><a href="#" class="stretched-link">Sed ut perspiciatis</a></h4>
-                            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur</p>
+                            <h4 class="title"><a href="#" class="stretched-link">Porters/Cleaners</a></h4>
+                            <p class="description">We recruit porters and cleaners for various industries. Our agency
+                                connects dedicated individuals for maintaining cleanliness and providing essential support
+                                services.</p>
                         </div>
                     </div><!-- End Service Item -->
 
                     <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
                         <div class="icon flex-shrink-0"><i class="bi bi-binoculars" style="color: #15bfbc;"></i></div>
                         <div>
-                            <h4 class="title"><a href="#" class="stretched-link">Magni Dolores</a></h4>
-                            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                deserunt mollit anim id est laborum</p>
+                            <h4 class="title"><a href="#" class="stretched-link">Chef Waitresses</a></h4>
+                            <p class="description">We specialize in recruiting talented chef waitresses. Our agency connects
+                                skilled individuals who excel in both culinary arts and customer service. Whether it's in
+                                fine dining establishments, hotels, or event venues, we ensure our clients have top-notch
+                                chef waitresses who deliver exceptional dining experiences.</p>
                         </div>
                     </div><!-- End Service Item -->
 
                     <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
                         <div class="icon flex-shrink-0"><i class="bi bi-brightness-high" style="color: #f5cf13;"></i></div>
                         <div>
-                            <h4 class="title"><a href="#" class="stretched-link">Nemo Enim</a></h4>
-                            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                                praesentium voluptatum deleniti atque</p>
+                            <h4 class="title"><a href="#" class="stretched-link">Warehouse Staff</a></h4>
+                            <p class="description">We recruit warehouse staff for various industries. Our agency connects
+                                reliable individuals who excel in warehouse operations and logistics. Whether it's in
+                                retail, manufacturing, or distribution, we ensure our clients have capable warehouse staff
+                                who contribute to efficient and organized operations.</p>
                         </div>
                     </div><!-- End Service Item -->
 
                     <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
                         <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week" style="color: #1335f5;"></i></div>
                         <div>
-                            <h4 class="title"><a href="#" class="stretched-link">Eiusmod Tempor</a></h4>
-                            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero
-                                tempore, cum soluta nobis est eligendi</p>
+                            <h4 class="title"><a href="#" class="stretched-link">Ofsted</a></h4>
+                            <p class="description">We offer support for Ofsted inspections. Our agency assists educational
+                                institutions in meeting the required standards and achieving positive outcomes. We provide
+                                tailored guidance, training, and resources to ensure successful Ofsted inspections.</p>
                         </div>
                     </div><!-- End Service Item -->
 
