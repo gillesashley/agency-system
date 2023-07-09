@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ApplicantsController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\JobController;
@@ -31,6 +32,9 @@ Route::get('/contact', [PagesController::class, 'contact'])->name('pages.contact
 Route::get('/apply', [PagesController::class, 'apply'])->name('pages.apply');
 Route::get('/vacancies', [PagesController::class, 'vacancies'])->name('pages.vacancies');
 
+Route::get('/applicants', [ApplicantsController::class, 'index'])->name('applicants.index');
+
 Route::post('/contact-send', [ContactController::class, 'sendEmail'])->name('contact.send');
 Route::resource('/jobs', JobController::class);
 Route::post('apply-job', [JobApplicationController::class, 'store'])->name('apply.store');
+

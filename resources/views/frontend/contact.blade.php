@@ -10,13 +10,11 @@
         <!-- ======= Breadcrumbs ======= -->
         <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/contact-header.jpg');">
             <div class="container position-relative d-flex flex-column align-items-center">
-
                 <h2>Contact</h2>
                 <ol>
                     <li><a href="{{ route('pages.index') }}">Home</a></li>
                     <li>Contact</li>
                 </ol>
-
             </div>
         </div><!-- End Breadcrumbs -->
 
@@ -57,8 +55,13 @@
                     </div>
 
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
-
-                        <form action="{{ route('contact.send') }}" method="post" role="form" class="php-email-form">
+                        {{-- Success alert --}}
+                        @if (session('success'))
+                            <div class="alert alert-success mx-auto">
+                                {{ session('success') }}
+                            </div>
+                        @endif
+                        <form action="{{ route('contact.send') }}" method="post" role="form">
                             @csrf
                             <div class="row">
                                 <div class="col-md-6 form-group">
@@ -75,22 +78,15 @@
                                     placeholder="Subject" required>
                             </div>
                             <div class="form-group mt-3">
-                                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                                <textarea class="form-control mb-4" name="message" rows="5" placeholder="Message" required></textarea>
                             </div>
-                            <div class="my-3">
-                                <div class="loading">Loading</div>
-                                <div class="error-message"></div>
-                                <div class="sent-message">Your message has been sent. Thank you!</div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary">Send Message</button>
                             </div>
-                            <div class="text-center"><button type="submit">Send Message</button></div>
                         </form>
-
                     </div><!-- End Contact Form -->
-
                 </div>
-
             </div>
         </section><!-- End Contact Section -->
-
     </main><!-- End #main -->
 @endsection

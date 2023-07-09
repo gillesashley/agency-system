@@ -14,7 +14,7 @@
                             </path>
                         </svg>
                     </button>
-                    <a href="https://flowbite.com" class="flex ml-2 md:mr-24">
+                    <a href="{{ route('dashboard') }}" class="flex ml-2 md:mr-24">
                         <span class="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">JayJay
                             Dashboard</span>
                     </a>

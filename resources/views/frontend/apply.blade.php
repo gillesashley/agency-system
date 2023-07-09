@@ -32,7 +32,10 @@
                                 @csrf
                                 <div class="mb-3">
                                     <label for="title" class="form-label">Title</label>
-                                    <input type="text" name="title" id="title" class="form-control" required>
+                                    <select name="title" id="title" class="form-control" required>
+                                        <option value="Mr.">Mr.</option>
+                                        <option value="Mrs.">Mrs.</option>
+                                    </select>
                                 </div>
                                 <div class="mb-3">
                                     <label for="firstname" class="form-label">First Name</label>

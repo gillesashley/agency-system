@@ -10,15 +10,15 @@ class ContactController extends Controller
 {
     public function sendEmail(Request $request)
     {
-        $validatedData = $request->validate([
+        $request->validate([
             'name' => 'required',
-            'subject' => 'required',
             'email' => 'required|email',
+            'subject' => 'required',
             'message' => 'required',
         ]);
 
         // Send email
-        Mail::to('Salatugab@gmail.com')->send(new ContactFormMail($request->user(), $validatedData));
+        Mail::to('xylaray37@gmail.com')->send(new ContactFormMail($request->user(), $request->all()));
 
         return redirect()->back()->with('success', 'Your message has been sent successfully!');
     }

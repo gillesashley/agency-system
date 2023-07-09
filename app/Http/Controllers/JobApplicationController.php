@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\JobApplication;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\JobApplicationConfirmationMail;
 
 class JobApplicationController extends Controller
 {
@@ -25,6 +27,9 @@ class JobApplicationController extends Controller
         ]);
 
         $jobApplication = JobApplication::create($data);
+
+        // Send confirmation email to the applicant
+        Mail::to($jobApplication->email)->send(new JobApplicationConfirmationMail($jobApplication));
 
         return redirect()->back()->with('success', 'You have successfully applied for this job!');
     }
