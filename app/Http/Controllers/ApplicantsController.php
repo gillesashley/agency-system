@@ -7,9 +7,14 @@ use Illuminate\Http\Request;
 
 class ApplicantsController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index()
     {
-        $job_applications = JobApplication::all();
+        $job_applications = JobApplication::orderBy('firstname', 'desc')->paginate(20);
 
         return view('backend.applicants.index', compact('job_applications'));
     }

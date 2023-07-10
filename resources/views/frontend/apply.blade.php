@@ -27,8 +27,19 @@
                                     {{ session('success') }}
                                 </div>
                             @endif
+
+                            @if ($errors->any())
+                                <div class="alert alert-danger">
+                                    <ul>
+                                        @foreach ($errors->all() as $error)
+                                            <li>{{ $error }}</li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            @endif
+
                             <h1 class="text-center mb-4">Apply for a Job</h1>
-                            <form action="{{ route('apply.store') }}" method="POST">
+                            <form action="{{ route('apply.store') }}" method="POST" enctype="multipart/form-data">
                                 @csrf
                                 <div class="mb-3">
                                     <label for="title" class="form-label">Title</label>
@@ -76,20 +87,20 @@
                                     <input type="text" name="postcode" id="postcode" class="form-control" required>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="criminal_conviction" class="form-label">Criminal Conviction</label>
-                                    <input type="text" name="criminal_conviction" id="criminal_conviction"
-                                        class="form-control" required>
+                                    <label for="cv" class="form-label">CV - Upload your CV</label>
+                                    <input type="file" name="cv" id="cv" class="form-control" accept=".pdf,.doc,.docx" required>
                                 </div>
+                                <hr>
                                 <div class="mb-3">
-                                    <label for="criminal_offence" class="form-label">Criminal Offence</label>
-                                    <input type="text" name="criminal_offence" id="criminal_offence" class="form-control"
-                                        required>
+                                    <label for="criminal_offence" class="form-label">Criminal Offence - Have you ever been
+                                        convicted of a criminal offence?</label>
+                                    <select name="criminal_offence" id="criminal_offence" class="form-select" required>
+                                        <option value="">Select</option>
+                                        <option value="yes">Yes</option>
+                                        <option value="no">No</option>
+                                    </select>
                                 </div>
-                                <div class="mb-3">
-                                    <label for="employment_history" class="form-label">Employment History</label>
-                                    <input type="text" name="employment_history" id="employment_history"
-                                        class="form-control" required>
-                                </div>
+
                                 <div class="text-center">
                                     <button type="submit" class="btn btn-primary">Submit</button>
                                 </div>

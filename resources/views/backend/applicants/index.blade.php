@@ -4,9 +4,9 @@
     <div class="p-4 sm:ml-64">
         <div class="p-4 mt-14 mb-14">
             <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+                <h1 class="text-4xl font-bold mb-7">Applicants</h1>
                 {{-- Search --}}
-
-                <form class="mb-20">
+                <form class="mb-20" id="search-form">
                     <label for="default-search"
                         class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
                     <div class="relative">
@@ -19,11 +19,12 @@
                         </div>
                         <input type="search" id="default-search"
                             class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            placeholder="Search Name, email..." required>
+                            placeholder="Search Name, email, phonenumber..." required>
                         <button type="submit"
                             class="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
                     </div>
                 </form>
+
 
                 <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
                     <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
@@ -51,7 +52,7 @@
                             </th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="table-body">
                         @foreach ($job_applications as $index => $job_application)
                             <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
                                 <th scope="row"
@@ -74,11 +75,8 @@
                                     {{ $job_application->phonenumber }}
                                 </td>
                                 <td class="px-6 py-4">
-                                    {{-- View applicant's details button --}}
-                                    <button class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                                        type="button" data-drawer-target="drawer-right-example"
-                                        data-drawer-show="drawer-right-example" data-drawer-placement="right"
-                                        aria-controls="drawer-right-example">
+                                    <button data-modal-target="defaultModal" data-modal-toggle="defaultModal"
+                                        class="font-medium text-blue-600 dark:text-blue-500 hover:underline" type="button">
                                         <svg class="w-6 h-6 text-gray-800 dark:text-blue-600" aria-hidden="true"
                                             xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 14">
                                             <path
@@ -90,9 +88,39 @@
                         @endforeach
                     </tbody>
                 </table>
-                <!-- Include the right drawer component -->
-                @include('backend.inc.right-drawer')
+                @include('backend.applicants.edit')
             </div>
         </div>
     </div>
 @endsection
+
+@push('scripts')
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchForm = document.querySelector('#search-form');
+            const tableBody = document.querySelector('#table-body');
+            const tableRows = tableBody.querySelectorAll('tr');
+
+            searchForm.addEventListener('input', function(e) {
+                const searchTerm = e.target.value.toLowerCase();
+
+                tableRows.forEach(function(row) {
+                    const columns = row.querySelectorAll('td');
+                    let found = false;
+
+                    columns.forEach(function(column) {
+                        if (column.textContent.toLowerCase().includes(searchTerm)) {
+                            found = true;
+                        }
+                    });
+
+                    if (found) {
+                        row.style.display = '';
+                    } else {
+                        row.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+@endpush

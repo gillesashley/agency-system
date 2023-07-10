@@ -22,9 +22,8 @@ return new class extends Migration
             $table->string('position');
             $table->string('address');
             $table->string('postcode');
-            $table->string('criminal_conviction');
             $table->string('criminal_offence');
-            $table->string('employment_history');
+            $table->string('cv');
             $table->timestamps();
         });
     }

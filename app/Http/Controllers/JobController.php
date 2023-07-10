@@ -8,6 +8,13 @@ use Illuminate\Support\Facades\Storage;
 
 class JobController extends Controller
 {
+    public function index()
+    {
+        $jobs = Job::all();
+
+        return view('backend.jobs.index', compact('jobs'));
+    }
+
     public function store(Request $request)
     {
         $validatedData = $request->validate([

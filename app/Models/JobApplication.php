@@ -19,8 +19,7 @@ class JobApplication extends Model
         'position',
         'address',
         'postcode',
-        'criminal_conviction',
         'criminal_offence',
-        'employment_history',
+        'cv',
     ];
 }
