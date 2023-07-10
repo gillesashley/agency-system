@@ -24,7 +24,7 @@
                     </div>
                     <div>
                         <label for="jobDescription" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Job Description</label>
-                        <textarea name="jobDescription" id="jobDescription" rows="4" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Enter the job description" required>{{ $job->description }}</textarea>
+                        <textarea name="jobDescription" id="jobDescription" rows="10" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Enter the job description" required>{{ $job->description }}</textarea>
                     </div>
                     <div>
                         <label for="jobLocation" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Job Location</label>

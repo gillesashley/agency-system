@@ -39,7 +39,7 @@
                             @endif
 
                             <h1 class="text-center mb-4">Apply for a Job</h1>
-                            <form action="{{ route('apply.store') }}" method="POST" enctype="multipart/form-data">
+                            <form action="{{ route('apply-job.store') }}" method="POST" enctype="multipart/form-data">
                                 @csrf
                                 <div class="mb-3">
                                     <label for="title" class="form-label">Title</label>

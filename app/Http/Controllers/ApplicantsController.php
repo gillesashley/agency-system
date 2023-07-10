@@ -14,7 +14,7 @@ class ApplicantsController extends Controller
 
     public function index()
     {
-        $job_applications = JobApplication::orderBy('firstname', 'desc')->paginate(20);
+        $job_applications = JobApplication::all();
 
         return view('backend.applicants.index', compact('job_applications'));
     }

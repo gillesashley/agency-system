@@ -36,9 +36,14 @@
                             <th scope="row"
                                 class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                 {{ $job->title }}</th>
-                            <td class="px-6 py-4">{{ $job->description }}</td>
+                            <td class="px-6 py-4">{{ Str::limit($job->description, 30, '...') }}</td>
                             <td class="px-6 py-4">{{ $job->location }}</td>
-                            <td class="px-6 py-4">{{ $job->image }}</td>
+                            {{-- <td class="px-6 py-4">{{ $job->image }}</td> --}}
+                            <td class="px-6 py-4">
+                                <a href="{{ asset('storage/' . $job->image) }}" target="_blank" class="text-lg text-blue-600">
+                                    View Image
+                                </a>
+                            </td>
                             <td class="px-6 py-4">
                                 {{-- Edit button --}}
                                 <button type="button" data-modal-target="edit-job-modal-{{ $job->id }}"

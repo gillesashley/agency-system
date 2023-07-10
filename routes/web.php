@@ -36,5 +36,7 @@ Route::get('/applicants', [ApplicantsController::class, 'index'])->name('applica
 
 Route::post('/contact-send', [ContactController::class, 'sendEmail'])->name('contact.send');
 Route::resource('/jobs', JobController::class);
-Route::post('apply-job', [JobApplicationController::class, 'store'])->name('apply.store');
+Route::resource('apply-job', JobApplicationController::class);
+Route::get('job-applications/{id}/cv', [JobApplicationController::class, 'openCV'])->name('job-applications.cv');
+
 

@@ -47,6 +47,9 @@
                             <th scope="col" class="px-6 py-3">
                                 Phonenumber
                             </th>
+                            <th scope="col" class="px-6 py-3 text-center">
+                                CV
+                            </th>
                             <th scope="col" class="px-6 py-3">
                                 Action
                             </th>
@@ -75,7 +78,12 @@
                                     {{ $job_application->phonenumber }}
                                 </td>
                                 <td class="px-6 py-4">
-                                    <button data-modal-target="defaultModal" data-modal-toggle="defaultModal"
+                                    <a href="{{ route('job-applications.cv', ['id' => $job_application->id]) }}"
+                                        class="text-red-700 hover:underline text-lg text-bold" target="_blank">VIEW CV</a>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <button data-modal-target="edit-job-application-modal-{{ $job_application->id }}"
+                                        data-modal-toggle="edit-job-application-modal-{{ $job_application->id }}"
                                         class="font-medium text-blue-600 dark:text-blue-500 hover:underline" type="button">
                                         <svg class="w-6 h-6 text-gray-800 dark:text-blue-600" aria-hidden="true"
                                             xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 14">
@@ -88,7 +96,7 @@
                         @endforeach
                     </tbody>
                 </table>
-                @include('backend.applicants.edit')
+                @include('backend.applicants.edit', [$job_application->id])
             </div>
         </div>
     </div>

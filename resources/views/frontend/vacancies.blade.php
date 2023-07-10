@@ -22,13 +22,13 @@
                     <h1>No Jobs Yet, Check again Later!</h1>
                 @endif
                 @foreach ($jobs as $index => $job)
-                    <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
                             <img src="{{ asset('storage/' . $job->image) }}" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">{{ $job->title }}</h5>
                                 <p class="card-text">{{ $job->description }}</p>
-                                <p class="card-text">{{ $job->location }}</p>
+                                <p class="card-text"><span class="text-bold">Job Location:</span> {{ $job->location }}</p>
                                 <a href="{{ route('pages.apply') }}" class="btn btn-primary">Apply Here</a>
                             </div>
                         </div>
