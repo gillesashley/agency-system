@@ -5,7 +5,7 @@
             <a href="{{ url('/') }}" class="logo d-flex align-items-center">
                 <!-- Uncomment the line below if you also wish to use an image logo -->
                 <!-- <img src="assets/img/logo.png" alt=""> -->
-                <h1 class="d-flex align-items-center">JayJay Health Care</h1>
+                <h1 class="d-flex align-items-center">JayJay Social Care</h1>
             </a>
 
             <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -35,7 +35,8 @@
                             {{-- <li><a href="#">Dropdown 4</a></li> --}}
                         </ul>
                     </li>
-                    <li><a href="{{ route('pages.contact') }}" class="{{ request()->is('contact*') ? 'active' : '' }}">Contact</a></li>
+                    <li><a href="{{ route('pages.contact') }}"
+                            class="{{ request()->is('contact*') ? 'active' : '' }}">Contact</a></li>
                 </ul>
             </nav><!-- .navbar -->
 
