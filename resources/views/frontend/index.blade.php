@@ -35,7 +35,7 @@
                 </div>
 
                 <div class="row g-0" data-aos="fade-up" data-aos-delay="200">
-                    <div class="col-xl-5 img-bg" style="background-image: url('assets/img/why-us-bg.jpg')"></div>
+                    <div class="col-xl-5 img-bg" style="background-image: url('assets/custom-images/rfstudio.jpg')"></div>
                     <div class="col-xl-7 slides  position-relative">
                         <div class="slides-1 swiper">
                             <div class="swiper-wrapper">
@@ -188,13 +188,13 @@
             <div class="container" data-aos="fade-up">
                 <div class="row justify-content-center">
                     <div class="col-lg-6 text-center">
-                        <h3>Ut fugiat aliquam aut non</h3>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-                        <a class="cta-btn" href="#">Call To Action</a>
+                        <h3>Providing Quality Healthcare Services</h3>
+                        <p>We deliver compassionate healthcare. Our dedicated team prioritizes patient well-being.
+                            Experience excellence in healthcare services.
+                        </p>
+                        <a class="cta-btn" href="{{ route('pages.apply') }}">Call To Action</a>
                     </div>
                 </div>
-
             </div>
         </section><!-- End Call To Action Section -->
 
@@ -204,63 +204,63 @@
             <div class="container" data-aos="fade-up">
                 <div class="row">
                     <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
-                        <h3>Powerful Features for <br>Your Business</h3>
+                        <h3>Powerful Features for <br>Our Health Care Agency</h3>
 
                         <div class="row gy-4">
 
                             <div class="col-md-6">
                                 <div class="icon-list d-flex">
                                     <i class="ri-store-line" style="color: #ffbb2c;"></i>
-                                    <span>Easy Cart Features</span>
+                                    <span>Easy-to-use job application system</span>
                                 </div>
                             </div><!-- End Icon List Item-->
 
                             <div class="col-md-6">
                                 <div class="icon-list d-flex">
                                     <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
-                                    <span>Sit amet consectetur adipisicing</span>
+                                    <span>Comprehensive data analysis and reporting</span>
                                 </div>
                             </div><!-- End Icon List Item-->
 
                             <div class="col-md-6">
                                 <div class="icon-list d-flex">
                                     <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
-                                    <span>Ipsum Rerum Explicabo</span>
+                                    <span>Efficient scheduling and task management</span>
                                 </div>
                             </div><!-- End Icon List Item-->
 
                             <div class="col-md-6">
                                 <div class="icon-list d-flex">
                                     <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
-                                    <span>Easy Cart Features</span>
+                                    <span>Customizable design options</span>
                                 </div>
                             </div><!-- End Icon List Item-->
 
                             <div class="col-md-6">
                                 <div class="icon-list d-flex">
                                     <i class="ri-database-2-line" style="color: #47aeff;"></i>
-                                    <span>Easy Cart Features</span>
+                                    <span>Secure and reliable data storage</span>
                                 </div>
                             </div><!-- End Icon List Item-->
 
                             <div class="col-md-6">
                                 <div class="icon-list d-flex">
                                     <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
-                                    <span>Sit amet consectetur adipisicing</span>
+                                    <span>Seamless integration with existing system</span>
                                 </div>
                             </div><!-- End Icon List Item-->
 
                             <div class="col-md-6">
                                 <div class="icon-list d-flex">
                                     <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
-                                    <span>Ipsum Rerum Explicabo</span>
+                                    <span>User-friendly interface for enhanced user experience</span>
                                 </div>
                             </div><!-- End Icon List Item-->
 
                             <div class="col-md-6">
                                 <div class="icon-list d-flex">
                                     <i class="ri-base-station-line" style="color: #ff5828;"></i>
-                                    <span>Easy Cart Features</span>
+                                    <span>Real-time updates and notifications for job applicants</span>
                                 </div>
                             </div><!-- End Icon List Item-->
                         </div>
@@ -278,10 +278,12 @@
                 <div class="container" data-aos="fade-up" data-aos-delay="300">
                     <div class="row">
                         <div class="col-md-6">
-                            <h4>Labore Sdio Lidui<br>Bonde Naruto</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam nostrum molestias
-                                doloremque quae delectus odit minima corrupti blanditiis quo animi!</p>
-                            <a href="#about" class="btn-get-started">Get Started</a>
+                            <h4>Efficient Workforce Management</h4>
+                            <p>Streamline your healthcare agency's operations with our advanced workforce management system.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam nostrum molestias
+                                doloremque quae delectus odit minima corrupti blanditiis quo animi!
+                            </p>
+                            <a href="{{ route('pages.apply') }}" class="btn-get-started">Get Started</a>
                         </div>
                     </div>
 
@@ -291,7 +293,7 @@
         </section><!-- End Features Section -->
 
         <!-- ======= Recent Blog Posts Section ======= -->
-        <section id="recent-posts" class="recent-posts">
+        {{-- <section id="recent-posts" class="recent-posts">
             <div class="container" data-aos="fade-up">
 
                 <div class="section-header">
@@ -368,7 +370,7 @@
                 </div>
 
             </div>
-        </section><!-- End Recent Blog Posts Section -->
+        </section><!-- End Recent Blog Posts Section --> --}}
 
     </main><!-- End #main -->
 @endsection

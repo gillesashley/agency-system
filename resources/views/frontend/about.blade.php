@@ -26,24 +26,23 @@
 
                 <div class="row gy-4" data-aos="fade-up">
                     <div class="col-lg-4">
-                        <img src="assets/img/about.jpg" class="img-fluid" alt="">
+                        <img src="assets/custom-images/pexels-anna-shvets-002.jpg" class="img-fluid" alt="">
                     </div>
                     <div class="col-lg-8">
                         <div class="content ps-lg-5">
-                            <h3>Voluptatem dignissimos provident quasi</h3>
-                            <p>
-                                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate
-                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                proident
-                            </p>
+                            <h3>Providing Exceptional Healthcare Services</h3>
+                            <p>At our healthcare agency, we are dedicated to delivering high-quality and compassionate care
+                                to our patients. We strive to ensure their well-being and provide them with the support they
+                                need. Our team of professionals works tirelessly to uphold the highest standards and exceed
+                                expectations. We believe in the power of healthcare to make a positive impact on people's
+                                lives and are committed to being a trusted partner in their healthcare journey.</p>
                             <ul>
-                                <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat.</li>
-                                <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in
-                                    voluptate velit.</li>
-                                <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat.</li>
+                                <li><i class="bi bi-check-circle-fill"></i> We prioritize patient care and satisfaction.
+                                </li>
+                                <li><i class="bi bi-check-circle-fill"></i> Our services are delivered by experienced and
+                                    qualified professionals.</li>
+                                <li><i class="bi bi-check-circle-fill"></i> We are dedicated to continuous improvement and
+                                    innovation in healthcare.</li>
                             </ul>
                         </div>
                     </div>
@@ -63,7 +62,7 @@
 
                 <div class="row g-0" data-aos="fade-up" data-aos-delay="200">
 
-                    <div class="col-xl-5 img-bg" style="background-image: url('assets/img/why-us-bg.jpg')"></div>
+                    <div class="col-xl-5 img-bg" style="background-image: url('assets/custom-images/rfstudio.jpg')"></div>
                     <div class="col-xl-7 slides  position-relative">
 
                         <div class="slides-1 swiper">
@@ -138,10 +137,11 @@
             <div class="container" data-aos="fade-up">
                 <div class="row justify-content-center">
                     <div class="col-lg-6 text-center">
-                        <h3>Ut fugiat aliquam aut non</h3>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-                        <a class="cta-btn" href="#">Call To Action</a>
+                        <h3>Providing Quality Healthcare Services</h3>
+                        <p>We deliver compassionate healthcare. Our dedicated team prioritizes patient well-being.
+                            Experience excellence in healthcare services.
+                        </p>
+                        <a class="cta-btn" href="{{ route('pages.apply') }}">Call To Action</a>
                     </div>
                 </div>
 

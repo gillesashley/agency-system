@@ -108,14 +108,17 @@
                         <div class="card-item">
                             <div class="row">
                                 <div class="col-xl-5">
-                                    <div class="card-bg" style="background-image: url(assets/img/cards-1.jpg);"></div>
+                                    <div class="card-bg"
+                                        style="background-image: url(assets/custom-images/pexels-karolina-grabowska.jpg);">
+                                    </div>
                                 </div>
                                 <div class="col-xl-7 d-flex align-items-center">
                                     <div class="card-body">
-                                        <h4 class="card-title">Eligendi omnis sunt veritatis.</h4>
-                                        <p>Fuga in dolorum et iste et culpa. Commodi possimus nesciunt modi voluptatem
-                                            placeat deleniti adipisci. Cum delectus doloribus non veritatis. Officia
-                                            temporibus illo magnam. Dolor eos et.</p>
+                                        <h4 class="card-title">Exceptional Care for All</h4>
+                                        <p>Experience compassionate care that puts your well-being first. Our dedicated team
+                                            ensures comfort and quality in every aspect of your healthcare journey. Trust us
+                                            to provide exceptional services tailored to your needs, delivering the care you
+                                            deserve.</p>
                                     </div>
                                 </div>
                             </div>
@@ -126,14 +129,16 @@
                         <div class="card-item">
                             <div class="row">
                                 <div class="col-xl-5">
-                                    <div class="card-bg" style="background-image: url(assets/img/cards-2.jpg);"></div>
+                                    <div class="card-bg"
+                                        style="background-image: url(assets/custom-images/pexels-anna-shvets.jpg);"></div>
                                 </div>
                                 <div class="col-xl-7 d-flex align-items-center">
                                     <div class="card-body">
-                                        <h4 class="card-title">Possimus ut sed velit assumenda</h4>
-                                        <p>Sunt deserunt maiores voluptatem autem est rerum perferendis rerum blanditiis.
-                                            Est laboriosam qui iste numquam laboriosam voluptatem architecto. Est laudantium
-                                            sunt at quas aut hic. Eum dignissimos.</p>
+                                        <h4 class="card-title">Committed to Exceptional Healthcare</h4>
+                                        <p>We are dedicated to delivering outstanding healthcare services, prioritizing
+                                            patient well-being and comfort. Our experienced team strives for excellence,
+                                            creating a positive impact on lives through innovative care and continuous
+                                            improvement.</p>
                                     </div>
                                 </div>
                             </div>
@@ -144,14 +149,18 @@
                         <div class="card-item">
                             <div class="row">
                                 <div class="col-xl-5">
-                                    <div class="card-bg" style="background-image: url(assets/img/cards-3.jpg);"></div>
+                                    <div class="card-bg"
+                                        style="background-image: url(assets/custom-images/pexels-klaus-nielsen.jpg);">
+                                    </div>
                                 </div>
                                 <div class="col-xl-7 d-flex align-items-center">
                                     <div class="card-body">
-                                        <h4 class="card-title">Error beatae dolor inventore aut</h4>
-                                        <p>Dicta porro nobis. Velit cum in. Nesciunt dignissimos enim molestiae facilis
-                                            numquam quae quaerat ipsam omnis. Neque debitis ipsum at architecto officia
-                                            laboriosam odit. Ut sunt temporibus nulla culpa.</p>
+                                        <h4 class="card-title">Expertise in Quality Care</h4>
+                                        <p>With our deep knowledge and experience, we deliver exceptional care that exceeds
+                                            expectations. We prioritize your well-being, ensuring a seamless and comfortable
+                                            healthcare experience. Trust us to provide the expertise and compassion you
+                                            deserve for your health and happiness.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -162,14 +171,16 @@
                         <div class="card-item">
                             <div class="row">
                                 <div class="col-xl-5">
-                                    <div class="card-bg" style="background-image: url(assets/img/cards-4.jpg);"></div>
+                                    <div class="card-bg"
+                                        style="background-image: url(assets/custom-images/rfstudio.jpg);"></div>
                                 </div>
                                 <div class="col-xl-7 d-flex align-items-center">
                                     <div class="card-body">
-                                        <h4 class="card-title">Expedita voluptas ut ut nesciunt</h4>
-                                        <p>Aut est quidem doloremque voluptatem magnam quis excepturi vero quia. Eum eos
-                                            doloremque architecto illo at beatae dolore. Fugiat suscipit et sint ratione
-                                            dolores. Aut aliquid ea dolores libero nobis.</p>
+                                        <h4 class="card-title">Your Well-being is Our Priority</h4>
+                                        <p>We are dedicated to ensuring your well-being, providing you with the utmost care
+                                            and attention. Our team is committed to delivering personalized healthcare
+                                            solutions that address your unique needs. Trust us to prioritize your comfort
+                                            and provide the support you need for a healthier and happier life.</p>
                                     </div>
                                 </div>
                             </div>
@@ -182,7 +193,7 @@
         </section><!-- End Services Cards Section -->
 
         <!-- ======= Testimonials Section ======= -->
-        <section id="testimonials" class="testimonials">
+        {{-- <section id="testimonials" class="testimonials">
             <div class="container" data-aos="fade-up">
 
                 <div class="section-header">
@@ -302,7 +313,7 @@
                 </div>
 
             </div>
-        </section><!-- End Testimonials Section -->
+        </section><!-- End Testimonials Section --> --}}
 
     </main><!-- End #main -->
 @endsection
