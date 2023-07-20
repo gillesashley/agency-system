@@ -204,49 +204,49 @@
             <div class="container" data-aos="fade-up">
                 <div class="row">
                     <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
-                        <h3>Powerful Features for <br>Our Health Care Agency</h3>
+                        <h3>A few more reasons why you<br>shoud register with us.</h3>
 
                         <div class="row gy-4">
 
                             <div class="col-md-6">
                                 <div class="icon-list d-flex">
                                     <i class="ri-store-line" style="color: #ffbb2c;"></i>
-                                    <span>Easy-to-use job application system</span>
+                                    <span>Great nursing job opportunities</span>
                                 </div>
                             </div><!-- End Icon List Item-->
 
                             <div class="col-md-6">
                                 <div class="icon-list d-flex">
                                     <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
-                                    <span>Comprehensive data analysis and reporting</span>
+                                    <span>Flexibility and work-life balance</span>
                                 </div>
                             </div><!-- End Icon List Item-->
 
                             <div class="col-md-6">
                                 <div class="icon-list d-flex">
                                     <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
-                                    <span>Efficient scheduling and task management</span>
+                                    <span>High pay rates</span>
                                 </div>
                             </div><!-- End Icon List Item-->
 
                             <div class="col-md-6">
                                 <div class="icon-list d-flex">
                                     <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
-                                    <span>Customizable design options</span>
+                                    <span>Support compliance and Bookings team</span>
                                 </div>
                             </div><!-- End Icon List Item-->
 
                             <div class="col-md-6">
                                 <div class="icon-list d-flex">
                                     <i class="ri-database-2-line" style="color: #47aeff;"></i>
-                                    <span>Secure and reliable data storage</span>
+                                    <span>Seamless registration process</span>
                                 </div>
                             </div><!-- End Icon List Item-->
 
                             <div class="col-md-6">
                                 <div class="icon-list d-flex">
                                     <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
-                                    <span>Seamless integration with existing system</span>
+                                    <span>Free training</span>
                                 </div>
                             </div><!-- End Icon List Item-->
 
@@ -267,7 +267,7 @@
                     </div>
                     <div class="col-lg-5 position-relative" data-aos="fade-up" data-aos-delay="200">
                         <div class="phone-wrap">
-                            <img src="assets/img/iphone.png" alt="Image" class="img-fluid">
+                            <img src="assets/img/iphone2.jpeg" alt="Image" class="img-fluid">
                         </div>
                     </div>
                 </div>

@@ -95,8 +95,10 @@
                             </tr>
                         @endforeach
                     </tbody>
+                    @if (count($job_applications) > 0)
+                        @include('backend.applicants.edit', [$job_application->id])
+                    @endif
                 </table>
-                @include('backend.applicants.edit', [$job_application->id])
             </div>
         </div>
     </div>

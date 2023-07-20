@@ -16,12 +16,13 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
 
     <!-- Scripts -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
+    <script src="https://cdn.tailwindcss.com"></script>
 
     @livewireStyles
 </head>
 
-<body>
+<body class="bg-gray-700 text-white">
     <div id="app">
         @include('backend.inc.header')
         @include('backend.inc.sidenav')
