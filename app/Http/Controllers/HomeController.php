@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Job;
+use App\Models\JobApplication;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,6 +25,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('backend.dashboard');
+        $jobCount = Job::count();
+        $applicantCount = JobApplication::count();
+
+        return view('backend.dashboard', [
+            'jobCount' => $jobCount,
+            'applicantCount' => $applicantCount,
+        ]);
     }
 }
